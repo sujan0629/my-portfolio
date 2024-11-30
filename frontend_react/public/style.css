@@ -1,0 +1,272 @@
+.circle {
+    height: 24px;
+    width: 24px;
+    border-radius: 24px;
+    background-color: #fff;
+    position: fixed; 
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    z-index: 99999999;
+}
+@media screen and (max-width: 1200px) {
+    .circle{
+        display: none;
+    }
+}
+
+footer{
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding: 50px 100px;
+    background: #111;
+    display: flex;
+
+    justify-content: space-between;
+    flex-wrap: wrap;
+    font-family: "DM sans", sans-serif;
+}
+
+footer .containr {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+}
+footer .containr .sec {
+    margin-right: 30px;
+
+}
+footer .containr .sec.aboutus {
+    width: 40%;
+
+}
+footer .containr h2{
+    position: relative;
+    color: #fff;
+    font-weight: 500;
+    margin-bottom: 25px;
+    font-size: 20px;
+    
+}
+
+footer .containr h2:before{
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 50px;
+    height: 2px;
+    background: blue;
+
+}
+footer p{
+    color: #999;
+    font-size: 14px;
+}
+.sci{
+    margin-top: 20px;
+    display: flex;
+}
+.sci li {
+    list-style: none;
+}
+.sci li a {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background: #222;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+    text-decoration: none;
+    border-radius: 50px;
+}
+
+.sci li a:hover {
+    background: #f00;
+}
+.sci li a .fa {
+    color: #fff;;
+    font-size: 20px;
+}
+.sci li a .fa-brands {
+    color: #fff;;
+    font-size: 20px;
+}
+
+.quickLinks {
+    position: relative;
+    width: 25%;
+}
+
+.quickLinks ul {
+    padding-left: 0; /* Remove default padding */
+}
+
+.quickLinks ul li {
+    position: relative;
+    padding-left: 25px; /* Add padding to make space for the symbol */
+    margin-bottom: 20px;
+    list-style: none;
+}
+
+.quickLinks ul li::before {
+    content: "\221E"; /* Unicode for the infinity symbol */
+    font-size: 18px; /* Increase font size for larger symbol */
+    position: absolute; /* Positioning the symbol */
+    left: 0; /* Position the symbol at the beginning of the list item */
+    top: 50%; /* Adjust as needed */
+    transform: translateY(-50%); /* Center the symbol vertically */
+    color: #fff; /* Color of the infinity symbol */
+}
+
+.quickLinks ul li a {
+    color: #999;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.quickLinks ul li a:hover {
+    color: #fff;
+}
+
+
+
+.contact {
+    width: calc(35% - 60px);
+    margin-right: 0 !important;
+}
+
+.contact .info {
+    position: relative;
+}
+.contact .info li {
+    display: flex;
+    margin-bottom: 16px;
+}
+.contact .info li span{
+    color: #fff;
+    font-size: 15px;
+    margin-right: 10px;
+}
+.contact .info li {
+    color: #999;
+    font-size: 14px;
+
+}
+.contact .info li a{
+    color: #999;
+    text-decoration: none;
+}
+.contact .info li a:hover{
+    color: #fff;
+}
+
+.copyrightText {
+    width: 100%;
+    background: #181818;
+    padding: 8px 100px;
+    text-align: center;
+    color: #c4bbbb;
+}
+.copyrightText i{
+    text-decoration: overline;
+    color: aqua;
+    font-family: "DM sans", sans-serif;
+}
+
+@media screen and (max-width: 991px) {
+    footer {
+        padding: 40px;
+    }
+    footer .containr {
+        flex-direction: column;
+    }
+    footer .containr .sec {
+        margin-right: 0;
+        margin-bottom: 40px;
+    }
+    footer .containr .sec.aboutus,
+    .quickLinks,
+    .contact{
+       width: 100%;
+    }
+    .copyrightText{
+        padding: 8px 40px;
+    }
+}
+
+.preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black; /* Black background */
+    color: white; /* White text color */
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    justify-content: center;
+    align-items: center;
+    z-index: 9999; /* Ensure it's above other content */
+  }
+  
+  .preloader h2 {
+    font-size: 50px; /* Increase font size of countdown */
+  }
+  
+  .preloader h3 {
+    margin-top: 10px; /* Adjust spacing */
+    font-size: 24px; /* Adjust font size */
+  }
+  
+
+.preloader p {
+    margin-top: 20px; /* Adjust spacing */
+    font-size: 16px; /* Adjust font size */
+    color: white; /* Text color */
+    text-align: center; /* Center-align the text */
+  }
+
+
+
+  .preloader i {
+    margin-left: 5px;
+    color: blue; /* Adjust spacing between icon and text */
+  }
+
+  .infinity {
+    font-size: 50px; /* Adjust size of the infinity symbol */
+    margin-top: 20px; /* Adjust spacing */
+  }
+
+  @media screen and (max-width: 768px) {
+    .preloader h2 {
+      font-size: 40px; /* Decrease font size for smaller screens */
+    }
+  
+    .preloader h3 {
+      font-size: 20px; /* Decrease font size for smaller screens */
+    }
+  
+    .preloader p {
+      font-size: 14px; /* Decrease font size for smaller screens */
+    }
+  
+    .infinity {
+      font-size: 40px; /* Decrease font size for smaller screens */
+    }
+  }
+
+  .copyrr{
+    margin-top: 20px;
+  }
+  .copyrr b{
+    color: aqua;
+    text-decoration: overline;
+    font-weight: 500;
+  }
