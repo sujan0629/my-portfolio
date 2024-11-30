@@ -2,7 +2,7 @@
 
 Welcome to my **portfolio** built with **React JS**, **Node.js**, and a **Content Management System (CMS)**. This project showcases my skills and projects with a dynamic, interactive user experience. It uses **Create React App** for frontend development and integrates a CMS for content management.
 
-[![Portfolio Demo](frontend_react/src/assets/demo.gif)](https://sujan0629.netlify.app/)
+[![Portfolio Demo](src/assets/demo.gif)](https://sujan0629.netlify.app/)
 
 ## 🌟 Live Preview
 
